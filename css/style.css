@@ -5,4 +5,21 @@
 .box {
   border: 1px solid black;
   height: 150px;
+  border-radius: 10%;
+}
+
+
+.xOrO{
+  display: block;
+  /*position: absolute;*/
+  /*margin-left: auto;
+  margin-right: auto;*/
+  margin: auto;
+  height: 12rem;
+  width: 12rem;
+}
+
+#reset{
+  margin-top: 20px;
+
 }
