@@ -30,10 +30,11 @@ $(document).ready(function() {
 	function ticTacToe() {
 		turn1();
 		$('.box').click(function() {
-			turn2()
+
 			if (!winner) {
 				if (turn) {
 					if (!$(this).hasClass('hasImg')) {
+            turn2()
 						$(this).append(x);
 						$(this).addClass('hasImg');
 						turn = false;
@@ -68,10 +69,10 @@ $(document).ready(function() {
 						}
 					}
 				} else {
-					turn1();
 					if (!$(this).hasClass('hasImg')) {
 						$(this).append(o);
 						$(this).addClass('hasImg');
+            turn1();
 						turn = true;
 						switch ($(this).attr('id')) {
 							case '1':
